@@ -45,7 +45,6 @@ Citizen.CreateThread(function()
         end
 
         if (pedBacLevel >= pedSlightDrunkBAC and pedBacLevel < legalBacLevel) then
-            print(pedBacLevel)
             RequestAnimSet("move_m@drunk@slightlydrunk")
             SetPedMovementClipset(ped, "move_m@drunk@slightlydrunk", true)
             SetPedIsDrunk(ped, true)
